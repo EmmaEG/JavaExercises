@@ -1,0 +1,19 @@
+INDEX VERSION 1.131+/home/emma/Documentos/Eclispse/.metadata/.plugins/org.eclipse.jdt.core
+4100246384.index
+1422575960.index
+3658395975.index
+3338404343.index
+1206732225.index
+1865797976.index
+3899111892.index
+4294014663.index
+308323118.index
+698431257.index
+3798843612.index
+3804947490.index
+642481300.index
+1335800746.index
+2161817348.index
+4088402999.index
+2423112536.index
+2517298580.index

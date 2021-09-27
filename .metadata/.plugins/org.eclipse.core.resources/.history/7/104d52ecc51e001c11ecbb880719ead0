@@ -1,0 +1,25 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public abstract class Vehiculo {
+	
+	private int kilometrosRecorridos = 0;
+	private Persona chofer;
+	
+	public Vehiculo (Persona chofer) {
+		setChofer(chofer);
+	}
+	
+	public int getKilometrosRecorridos() {
+		return this.kilometrosRecorridos;
+	}
+	
+	protected boolean setChofer(Persona chofer) {
+			this.chofer = chofer;
+			return true;
+	}
+	
+	// metodo abtract para que todas las clases esten obligadas a incorporarlos
+	public abstract boolean cambiarChofer(Persona nuevoChofer);
+	
+
+}

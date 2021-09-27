@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;ar.edu.uno.poo1.projects&apos; to &apos;ar.edu.uno.poo1.par_impar&apos;&#x0A;- Original project: &apos;UniversityProjects&apos;&#x0A;- Original element: &apos;UniversityProjects/src/ar.edu.uno.poo1.projects&apos;&#x0A;- Renamed element: &apos;UniversityProjects/src/ar.edu.uno.poo1.par_impar&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;ar.edu.uno.poo1.projects&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;ar.edu.uno.poo1.projects" name="ar.edu.uno.poo1.par_impar" qualified="false" references="true" stamp="1632565564765" textual="false" version="1.0"/>
+</session>

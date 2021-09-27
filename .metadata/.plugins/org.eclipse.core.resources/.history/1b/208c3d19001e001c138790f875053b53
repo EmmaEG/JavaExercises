@@ -1,0 +1,23 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Motocicleta extends Vehiculo {
+	
+	private Persona acompaniante;
+	
+	// constructor con chofer
+	public Motocicleta(Persona chofer) {
+		super(chofer);
+	}
+	
+	// constructor sin chofer
+		public Motocicleta() {
+			super(null);
+		}
+	
+	
+	@Override
+	public boolean cambiarChofer(Persona chofer) {
+		return false;
+	}
+	
+}

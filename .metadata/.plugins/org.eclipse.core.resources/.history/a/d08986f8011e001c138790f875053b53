@@ -1,0 +1,18 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Autobus extends Vehiculo {
+	
+	private Persona[] pasajeros;
+	private int asientoVacio = 0;
+	
+	// constructor, creo el autobus
+	public Autobus(Persona chofer, int cantAsientos) {
+		super(chofer);
+		this.pasajeros = new Persona[cantAsientos];
+	}
+	
+	public void subirPasajero(Persona pasajero) { // ¿como subo una persona, le paso un pasajero
+		// si el asientoVacio es menor que el tamaño del arreglo
+	}
+
+}

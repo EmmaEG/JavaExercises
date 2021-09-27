@@ -1,0 +1,34 @@
+
+  1)  
+ Existen dos tipos de vehículos: las motocicletas, que llevan un chofer y un acompañante, y los autobuses, 
+ que llevan un chofer y varios pasajeros. Los vehículos deben conocer la cantidad de kilómetros recorridos,
+ asignar y cambiar chofer. Cada vehículo particular deberá poder agregar un acompañante o diversos pasajeros,
+ respectivamente. En caso del Autobús, no puede cambiar de chofer si hubiera pasajeros. En el caso de la 
+ Motocicleta, no puede hacerlo si hubiera un acompañante.
+ 
+ analizamos el modelaje del ejercicio
+ Nuestra clase abtracta será el vehículo, ya que nunca se instanciara.
+ 
+ Lo que tratamos de hacer con nuestra clase padre es generalizar las cosas que van a tener nuestras clases hijas
+ y en ellas vamos a especializar cada una 
+ 
+ Vehiculo: -> clase padre (abstracta, xq no necesita ser instanciada).
+ 	Tiene un chofer 
+ 	Conocer la cantidad de kilometros
+ 	Deben asignar chofer
+ 	Cambiar chofer
+ 	(No me conviene pensar en los acompañantes como atributos porque la moto siempre tendrá uno, en cambio el autobus pueden ser más.)
+ 
+ Motocicleta:
+ 	Tiene un acompañante
+ 	Agregar acompañante
+ 	No puede cambiar chofer si hay acompañante
+ 	
+ Autobús: 
+ 	Tiene pasajeros []
+ 	Agregar pasajeros
+ 	No puede cambiar chofer si hay pasajeros
+ 	
+ Persona:
+ 	Tiene dni
+ 	Tiene nombre 

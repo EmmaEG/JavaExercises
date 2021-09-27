@@ -1,0 +1,17 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Vehiculo {
+	
+	private int kilometrosRecorridos = 0;
+	private Persona chofer;
+	
+	public Vehiculo (Persona chofer) {
+		this.chofer = chofer;
+	}
+	
+	public int getKilometrosRecorridos() {
+		return this.kilometrosRecorridos;
+	}
+	
+
+}

@@ -1,0 +1,82 @@
+package ar.edu.uno.poo1.videoClub;
+
+//Sus atributos son titulo, año, entregado, genero y director.
+//Por defecto, el genero es “no definido” y entregado false. El
+//resto de atributos serán valores por defecto según el tipo del
+//atributo
+
+public class Pelicula {
+	
+	// -------------- ATRIBUTOS -------------
+	private String titulo;
+	private int anio;
+	private boolean entregado = false;
+	private Genero genero; // genero era String pero lo hacemos enum para practicar
+	private String director;
+	
+	
+	// -------------- CONSTRUCTORES -------------
+	// siempre empezamos por el constructor más completo que nos pide el ejercicio,
+	// para despues poder invocarlo en los otros
+	//	Un constructor con todos los atributos, excepto de
+	//	entregado.
+	public Pelicula(String titulo, int anio, Genero genero, String director) {
+		super();
+		this.titulo = titulo;
+		this.anio = anio;
+		this.genero = genero;
+		this.director = director;
+	}
+
+	// Un constructor con el titulo y director. El resto por
+	// defecto
+	public Pelicula(String titulo, String director) { // usamos el constructor anterior
+		this(titulo, 0, Genero.NO_DEFINIDO, director); // el 0 es el anio del constructor que estoy invocando
+	}
+	
+	//otro constructor más que solo le paso titulo (este llama al de arriba, entonces director lo pongo vacío)
+	public Pelicula(String titulo) {
+		this(titulo, "");
+	}
+	
+	//constructor por defecto  (este llama al de arriba, entonces titulo lo pongo vacío)
+		public Pelicula() {
+			this("");
+		}
+
+
+	// --------------- GETTERS -------------------
+	public String getTitulo() {
+		return this.titulo;
+	}
+
+	public int getAnio() {
+		return this.anio;
+	}
+
+	public String getGenero() {
+		return this.genero;
+	}
+
+	public String getDirector() {
+		return this.director;
+	}
+
+	// ------------- SETTERS -----------------
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public void setAnio(int anio) {
+		this.anio = anio;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+
+	public void setDirector(String director) {
+		this.director = director;
+	}
+
+}

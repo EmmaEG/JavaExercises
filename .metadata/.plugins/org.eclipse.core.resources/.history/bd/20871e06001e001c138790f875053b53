@@ -1,0 +1,15 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Motocicleta extends Vehiculo {
+	
+	// constructor
+	public Motocicleta(Persona chofer) {
+		super(chofer);
+	}
+	
+	@Override
+	public boolean cambiarChofer(Persona chofer) {
+		return false;
+	}
+	
+}

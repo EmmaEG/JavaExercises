@@ -1,0 +1,24 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Motocicleta extends Vehiculo {
+	
+	private Persona acompaniante;
+	
+	// constructor con chofer
+	public Motocicleta(Persona chofer) {
+		super(chofer); // la primer linea de un constructor es la llamada al constructor de la superclase
+	}
+	
+	// constructor sin chofer (puedo crear una moto sin parametros de este modo)
+		public Motocicleta() {
+			super(null);
+		}
+	
+	
+	@Override
+	public boolean cambiarChofer(Persona nuevoChofer) {
+		if (this.acompaniante == null)
+			super.setChofer(nuevoChofer);
+	}
+	
+}

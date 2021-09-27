@@ -1,0 +1,42 @@
+package ar.edu.uno.poo1.vehiculos;
+
+public class Autobus extends Vehiculo {
+	
+	private Persona[] pasajeros;
+	private int asientoVacio = 0;
+	
+	// constructor, creo el autobus
+	public Autobus(Persona chofer, int cantAsientos) {
+		super(chofer);
+		this.pasajeros = new Persona[cantAsientos];
+	}
+	
+	public void subirPasajero(Persona pasajero) { // ¿como subo una persona, le paso un pasajero
+		// si el asientoVacio es menor que el tamaño del arreglo
+		if (this.asientoVacio < this.pasajeros.length) {
+			this.pasajeros[asientoVacio] = pasajero;
+			this.asientoVacio++;
+		}
+	}
+	
+	public void bajarPasajero() {
+		if (hayPasajeros()) {
+			this.asientoVacio--;
+		}
+	}
+	
+	@Override
+	public boolean cambiarChofer(Persona nuevoChofer) {
+		if (!hayPasajeros()) {
+			super.setChofer(nuevoChofer);
+			return true;
+		}
+		return false;
+	}
+	
+	private boolean hayPasajeros() {
+		return this.asientoVacio > 0;
+	}
+	
+
+}
